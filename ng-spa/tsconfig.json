@@ -2,7 +2,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    // "outDir": "./dist/out-tsc",
+    "outDir": "../core-angular-azure/wwwroot",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
