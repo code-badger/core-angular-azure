@@ -71,11 +71,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent(_httpService) {
         this._httpService = _httpService;
-        this.title = 'Code and push and code and push';
         this.apiValues = [];
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.title = 'Code and push and code and push';
         this._httpService.get('/api/core').subscribe(function (values) {
             _this.apiValues = values.json();
         });
