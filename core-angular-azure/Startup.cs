@@ -40,16 +40,6 @@ namespace CoreAngularAzure
             // Configures application to serve the index.html file from /wwwroot when you access the server from a web browser
             app.UseDefaultFiles();
             app.UseStaticFiles();
-
-            //if (env.IsDevelopment())
-            //{
-            //    app.UseDeveloperExceptionPage();
-            //}
-
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
         }
     }
 }

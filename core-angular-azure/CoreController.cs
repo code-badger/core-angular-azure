@@ -15,7 +15,7 @@ namespace CoreAngularAzure
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Hey", "Universe" };
+            return new string[] { "Hey", "Universe", "And", "Wiener Dogs"};
         }
     }
 }
