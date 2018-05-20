@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Application says what?</h1>\n<ul>\n  <li *ngFor=\"let value of apiValues\">{{value}}</li>\n</ul>\n"
+module.exports = "<h1>{{title}}</h1>\n<ul>\n  <li *ngFor=\"let value of apiValues\">{{value}}</li>\n</ul>\n"
 
 /***/ }),
 
@@ -71,6 +71,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent(_httpService) {
         this._httpService = _httpService;
+        this.title = 'Code and push and code and push';
         this.apiValues = [];
     }
     AppComponent.prototype.ngOnInit = function () {

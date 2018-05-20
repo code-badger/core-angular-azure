@@ -10,19 +10,13 @@ import { Http } from '@angular/http';
 export class AppComponent implements OnInit {
   constructor(private _httpService: Http) {}
 
-  title: string = 'Code and push and code and push';
+  title: string;
   apiValues: string[] = [];
 
   ngOnInit() {
-    this._httpService.get('/api/values').subscribe(values => {
+    this.title = 'Code and push and code and push';
+    this._httpService.get('/api/core').subscribe(values => {
       this.apiValues = values.json() as string[];
     });
   }
-  // apiValues: string[] = [];
-
-  // ngOnInit() {
-  //   this._httpService.get('/api/core').subscribe(values => {
-  //     this.apiValues = values.json() as string[];
-  //   });
-  // }
 }
