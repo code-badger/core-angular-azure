@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <RetryAttemptsForDeployment>4</RetryAttemptsForDeployment>
   </PropertyGroup>
 
   <ItemGroup>
