@@ -1,0 +1,6 @@
+pipeline:
+#  build:
+#    image: hugo
+  hugo:
+    image: cbrgm/drone-hugo:latest
+    validate: true
