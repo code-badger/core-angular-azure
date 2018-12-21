@@ -1,9 +1,0 @@
-#workspace:
-#  base: /drone
-#  path: src/sleepyserver.duckdns.org/codebadger/hugo-test/hugo_site/
-pipeline:
-#  build:
-#    image: hugo
-  hugo:
-    image: cbrgm/drone-hugo:latest
-    validate: true
